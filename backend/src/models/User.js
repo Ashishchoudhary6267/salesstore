@@ -9,7 +9,7 @@ const CartItemSchema = new mongoose.Schema({
   quantity: { type: Number, default: 1 }
 }, { _id: false });
 
-const userSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema( {
   firstName: {
     type: String,
     required: [true, 'First name is required'],
